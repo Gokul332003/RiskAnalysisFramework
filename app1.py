@@ -20,7 +20,7 @@ st.write("Uploaded Data", df)
 # Level 1: Feature Risk Prediction
 # -------------------------------
 st.header("Level 1: Feature Risk Prediction")
-level1_dir = "C:/Users/GokulP/LoanDelinquency/models/level1"
+level1_dir = "models/level1"
 level1_risks = []
 
 for file in os.listdir(level1_dir):
@@ -72,7 +72,7 @@ else:
 # Level 2: Group Risk Prediction
 # -------------------------------
 st.header("Level 2: Group Risk Prediction")
-level2_dir = "C:/Users/GokulP/LoanDelinquency/models/level2"
+level2_dir = "models/level2"
 level2_risks = []
 
 for file in os.listdir(level2_dir):
@@ -141,7 +141,7 @@ else:
 # -------------------------------
 st.header("Level 3: Final Risk Prediction")
 
-level3_model_path = "C:/Users/GokulP/LoanDelinquency/models/level3/level3_model.pkl"
+level3_model_path = "models/level3/level3_model.pkl"
 
 # Manual mapping for fallback decoding
 label_map = {
@@ -221,3 +221,4 @@ st.download_button(
     file_name="full_risk_predictions.csv",
     mime="text/csv"
 )
+
